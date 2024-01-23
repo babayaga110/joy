@@ -3,7 +3,7 @@ import Grid from '@mui/joy/Grid';
 import Input from '@mui/joy/Input';
 import Button from '@mui/joy/Button'
 
-import Textarea from '@mui/joy/Textarea';
+
 import { Typography } from '@mui/joy';
 
 export default function Sign() {
@@ -37,7 +37,7 @@ paddingLeft={80}
     <Input placeholder="Enter Last Name" /> 
  </Grid>
  <Grid item xs={4}>
- <Textarea name="Solid" placeholder="Enetr Email" />
+ <Input placeholder="Enter Email" /> 
  </Grid>
  <Grid item xs={4}>
     <Input placeholder="Enter password" /> 
