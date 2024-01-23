@@ -8,23 +8,29 @@ import { Typography } from '@mui/joy';
 
 export default function Sign() {
   return (
+<Grid
+position={'fixed'}
+paddingLeft={80}
 
+>
    
     <Grid
     container
     spacing={5}
     marginTop={18}
   direction="column"
+  
   justifyContent="center"
   alignItems="center"
   borderRadius={10}
+  bgcolor={'wheat'}
   
   
   >
       <Typography level="h2" marginBottom={4} color="purple" sx={theme => ({
     color: `rgba(${theme.vars.palette.primary.mainChannel} / 0.72)`,
   })}>Sign Up</Typography>
-    <Grid item xs={4}>
+    <Grid item lg={7}>
     <Input placeholder="Enter First Name" /> 
  </Grid>
  <Grid item xs={4}>
@@ -43,6 +49,7 @@ export default function Sign() {
     <Button type='Submit'>Submit</Button>
     </Grid>
 
+    </Grid>
     </Grid>
   )
 }
